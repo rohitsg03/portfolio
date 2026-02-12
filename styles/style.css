@@ -15,7 +15,7 @@
 
   /* Achtergronden */
   --achtergrond: light-dark(white, black);
-  --headerAchtergrond: light-dark(url: "/images/headerBackground.png");
+  --headerAchtergrond: light-dark(url: "images/headerBackground.png");
   --cards: light-dark(#e7e8e9, #3f4c59);
   --borderRadius: .75rem;
 
