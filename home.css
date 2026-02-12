@@ -1,0 +1,110 @@
+header {
+  background-image: url("/images/headerBackground.png");
+  background-size: cover;
+
+  h1 {
+    font-family: "futura-100", sans-serif;
+    font-size: 2em;
+    padding-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.1em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-image: url("/images/headerBackgroundDark.png");
+  }
+}
+
+/* Eerste section */
+header section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+
+  p:nth-of-type(2) {
+    font-family: "futura-100", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-top: 2rem;
+  }
+
+  @media (width > 50em) {
+    p:nth-of-type(1) {
+      width: 50%;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    appearance: none;
+    font-size: 1.1em;
+    height: 3em;
+    width: 10em;
+    margin-top: 3rem;
+    color: white;
+    background-color: var(--buttonMijnProjecten);
+
+    border-bottom: 0.2em;
+    border-right: 0.2em;
+    border-color: white;
+
+    svg {
+      color: white;
+      height: 1em;
+    }
+  }
+}
+
+main section:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+
+  h2{
+    padding: 0 1rem;
+  }
+
+  p{
+    padding: 0 1rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    padding-bottom: 1rem;
+    border-radius: var(--borderRadius);
+
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0;
+      order: -1;
+      border-radius: var(--borderRadius);
+
+      img {
+        height: 11rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (width > 50em) {
+  main section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4rem;
+  }
+}
