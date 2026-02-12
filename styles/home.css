@@ -16,7 +16,7 @@ header {
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-image: url("/images/headerBackgroundDark.png");
+    background-image: url("images/headerBackgroundDark.png");
   }
 }
 
