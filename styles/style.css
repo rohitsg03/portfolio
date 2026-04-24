@@ -18,7 +18,7 @@
   --borderRadiusDesktop: 3rem;
 
   /* Logo's en svg's */
-  --linkedIn: black;
+  --linkedIn: white;
   --tekstKleurOmgedraaid: light-dark(white, black);
 
   /* Buttons en links */
@@ -56,12 +56,16 @@ p {
 
 header {
   color: var(--tekstKleurHeader);
-  margin: 2rem;
+  /* margin: 2rem; */
 
+  div{
+    margin: 2rem;
+  }
   nav {
+    background-color: #c91e1e;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5rem;
+    padding: 2rem;
 
     svg {
       color: var(--linkedIn);
@@ -80,7 +84,7 @@ header nav ul {
     list-style-type: none;
 
     a {
-      color: var(--tekstKleurHeader);
+      color: white;
 
       :hover {
         text-decoration: underline;
@@ -90,6 +94,8 @@ header nav ul {
 }
 
 footer{
+  padding: 2rem 0;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   background-color: #c91e1e;
