@@ -11,16 +11,14 @@
   color-scheme: light dark;
 
   --tekstKleur: light-dark(black, white);
-  --tekstKleurHeader: white;
 
   /* Achtergronden */
-  --achtergrond: light-dark(white, black);
-  --headerAchtergrond: light-dark(url: "images/headerBackground.png");
-  --cards: light-dark(#e7e8e9, #3f4c59);
-  --borderRadius: .75rem;
+  
+  --borderRadiusMobiel: 2rem;
+  --borderRadiusDesktop: 3rem;
 
   /* Logo's en svg's */
-  --linkedIn: white;
+  --linkedIn: black;
   --tekstKleurOmgedraaid: light-dark(white, black);
 
   /* Buttons en links */
@@ -28,28 +26,37 @@
 }
 
 html {
-  background-color: var(--achtergrond);
   color: var(--tekstKleur);
 }
 
-main {
-  padding: 1rem;
+@media (prefers-color-scheme: dark) {
+  html {
+    background: linear-gradient(180deg, #030620 0%, #0b365a 100%);
+  }
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.07em;
 }
 
-@media (width > 50em) {
+@media (width > 60em) {
+  html{
+    margin: 0 8rem;
+  }
   p {
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+}
+
+@media (width > 70em) {
+  html{
+    margin: 0 9rem;
   }
 }
 
 header {
   color: var(--tekstKleurHeader);
-  padding: 2rem;
-  background-color: var(--achtergrond);
+  margin: 2rem;
 
   nav {
     display: flex;
@@ -79,5 +86,22 @@ header nav ul {
         text-decoration: underline;
       }
     }
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #c91e1e;
+  color: white;
+
+  li{
+    list-style-type: none;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    
   }
 }
