@@ -1,15 +1,13 @@
-header {
-  h1 {
-    font-size: 1.5em;
-    padding-bottom: 1rem;
-  }
+h1 {
+  font-size: 3em;
+  line-height: 1.1em;
+  font-family: "futura-100", sans-serif;
+  padding-top: 1rem;
+}
 
-  h2 {
-    font-size: 3em;
-    line-height: 1.1em;
-    font-family: "futura-100", sans-serif;
-    line-height: 1.1em;
-  }
+h2 {
+  font-size: 1.5em;
+  font-family: "futura-100", sans-serif;
 }
 
 span {
@@ -57,6 +55,20 @@ header section:nth-of-type(1) {
   }
 }
 
+main > section > div {
+  margin: 0 2rem 2rem 2rem;
+
+  h2 {
+    padding-top: 2rem;
+  }
+  h3 {
+    font-family: "futura-100", sans-serif;
+    font-weight: 400;
+    color: #848282;
+    line-height: 1.2em;
+  }
+}
+
 main section > article {
   margin-bottom: 4rem;
 }
@@ -101,20 +113,58 @@ main section > article:nth-of-type(4) > div:nth-of-type(1) {
 main section > article:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) {
   background-color: #00b6f0;
   border-radius: var(--borderRadiusMobiel);
-  height: 25rem;
+  height: 23rem;
+  /* filter: blur(0.1rem); */
 
   img {
     height: 15rem;
   }
+  /* &:hover {
+    filter: blur(0rem);
+    transition: 0.2s linear;
+  } */
 }
 
 main section > article:nth-of-type(2) > div:nth-of-type(1) div:nth-of-type(2) {
-  background-color: #EE9E9E;
+  background-color: #ee9e9e;
   border-radius: var(--borderRadiusMobiel);
-  height: 25rem;
+  height: 23rem;
+  /* filter: blur(0.1rem); */
 
   img {
     height: 15rem;
+  }
+
+  /* &:hover {
+    filter: blur(0rem);
+    transition: 0.2s linear;
+  } */
+}
+
+main section > article:nth-of-type(3) > div:nth-of-type(1) div:nth-of-type(2) {
+  background-color: #fffccb;
+  border-radius: var(--borderRadiusMobiel);
+  height: 23rem;
+  /* filter: blur(0.1rem); */
+
+  img {
+    height: 10rem;
+  }
+
+  /* &:hover {
+    filter: blur(0rem);
+    transition: 0.2s linear;
+  } */
+}
+
+main section > article:nth-of-type(4) > div:nth-of-type(1) div:nth-of-type(2) {
+  background-color: #67e9a3;
+  border-radius: var(--borderRadiusMobiel);
+  height: 23rem;
+
+  img {
+    height: 5rem;
+    width: 15rem;
   }
 }
 
@@ -136,21 +186,20 @@ main section > article:nth-of-type(4) a {
 }
 
 main section > article:nth-of-type(1) a {
-  background-color: rgb(197, 229, 239);
+  background-color: #3bc0ed76;
 }
 
 main section > article:nth-of-type(2) a {
-  background-color: #EE9E9E;
-  color: white;
+  background-color: #ee9e9e7f;
 }
 
 main section > article:nth-of-type(3) a {
-  background-color: rgb(212, 206, 120);
+  background-color: #fffccb;
 }
 
 main section > article:nth-of-type(4) a {
-  background-color: rgb(119, 192, 143);
-  color: white;
+  background-color: #67e9a482;
+  
 }
 
 /* Voor de 1e card apart
@@ -214,17 +263,6 @@ main section > article > div > div:nth-of-type(3) {
     padding: 0.2em 0.7em;
   }
 }
-
-/* Stukje tekst */
-/* main section article > div div:nth-of-type(1) {
-  padding: 1rem;
-
-  @media (width > 70em) {
-    p {
-      width: 90%;
-    }
-  }
-} */
 
 /* image */
 main section > article > div div:nth-of-type(2) {
