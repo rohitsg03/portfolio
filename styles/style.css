@@ -14,7 +14,7 @@
 
   /* Achtergronden */
   
-  --borderRadiusMobiel: 1rem;
+  --borderRadiusMobiel: .8rem;
   --borderRadiusDesktop: 3rem;
 
   /* Logo's en svg's */
@@ -36,7 +36,7 @@ html {
 }
 
 p {
-  font-size: 1.07em;
+  font-size: 1em;
 }
 
 @media (width > 60em) {

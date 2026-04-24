@@ -80,13 +80,14 @@ main section > article:nth-of-type(4) > div:nth-of-type(1) {
   h3 {
     grid-area: titel;
     font-family: "futura-100", sans-serif;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 500;
     /* padding-top: 2rem; */
   }
 
   p {
     grid-area: uitleg;
+    color: #848282;
   }
 
   img {
@@ -98,11 +99,21 @@ main section > article:nth-of-type(4) > div:nth-of-type(1) {
 }
 
 main section > article:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) {
-  background-color: #00B6F0;
+  background-color: #00b6f0;
   border-radius: var(--borderRadiusMobiel);
-  height: 30rem;
+  height: 25rem;
 
-  img{
+  img {
+    height: 15rem;
+  }
+}
+
+main section > article:nth-of-type(2) > div:nth-of-type(1) div:nth-of-type(2) {
+  background-color: #EE9E9E;
+  border-radius: var(--borderRadiusMobiel);
+  height: 25rem;
+
+  img {
     height: 15rem;
   }
 }
@@ -111,7 +122,7 @@ main section > article:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(2) {
 main section > article:nth-of-type(1) a,
 main section > article:nth-of-type(2) a,
 main section > article:nth-of-type(3) a,
-main section > article:nth-of-type(4) a  {
+main section > article:nth-of-type(4) a {
   border-radius: 3rem;
   padding: 0.5rem 1rem;
   color: black;
@@ -125,11 +136,11 @@ main section > article:nth-of-type(4) a  {
 }
 
 main section > article:nth-of-type(1) a {
-  background-color:rgb(197, 229, 239);
+  background-color: rgb(197, 229, 239);
 }
 
 main section > article:nth-of-type(2) a {
-  background-color: rgb(225, 172, 172);
+  background-color: #EE9E9E;
   color: white;
 }
 
@@ -141,7 +152,6 @@ main section > article:nth-of-type(4) a {
   background-color: rgb(119, 192, 143);
   color: white;
 }
-
 
 /* Voor de 1e card apart
 main section > article:nth-of-type(1) > div:nth-of-type(1) {
@@ -201,7 +211,7 @@ main section > article > div > div:nth-of-type(3) {
   p {
     border: 0.15rem solid #d9d9d9;
     border-radius: 3rem;
-    padding: .2rem .7rem;
+    padding: 0.2em 0.7em;
   }
 }
 
@@ -234,16 +244,13 @@ main section > article > div div:nth-of-type(2) {
 }
 
 @media (width > 40em) {
-  html{
+  html {
     margin: 0 3.5rem;
   }
 }
 
-
-
-
 @media (width > 52em) {
-  html{
+  html {
     margin: 0 1rem;
   }
   header h2 {
@@ -287,8 +294,6 @@ main section > article > div div:nth-of-type(2) {
     }
   }
 }
-
-
 
 @media (width > 60em) {
   main section > article:nth-of-type(1) > div:nth-of-type(1),
