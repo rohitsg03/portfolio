@@ -1,9 +1,25 @@
-@import url("https://use.typekit.net/tre1kwo.css");
-@import url("https://use.typekit.net/alp8nbk.css");
+@font-face {
+  font-family: "monsBold";
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: "monsSBold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "monsRegular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "interRegular";
+  src: url(../fonts/Inter_18pt-Regular.ttf);
+}
 
 * {
   margin: 0;
-  font-family: "proxima-nova", sans-serif;
 }
 
 /* kleuren */
@@ -12,7 +28,7 @@
 
   --pKleurZwart: light-dark(black, rgb(224, 224, 224));
   --pKleurWit: light-dark(white, black);
-  --pKleurSubtext: light-dark(#848282, rgb(172, 172, 173));
+  --pKleurSubtext: light-dark(#7e7d7d, rgb(172, 172, 173));
   --pKleurGrijs: light-dark();
 
   /* Achtergronden */
@@ -38,30 +54,40 @@ body {
 }
 
 main {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 h1 {
+  font-family: "monsBold";
   font-size: 2.5em;
-  line-height: 1.1em;
-  font-family: "futura-100", sans-serif;
+  line-height: 1.1;
+  
   padding-top: 1rem;
   color: var(--pKleurZwart);
 }
 
 h2 {
+  padding: .5rem 0;
   font-size: 1.5em;
-  font-family: "futura-100", sans-serif;
+   font-family: "monsSBold";
+   font-weight: 900;
   color: var(--pKleurZwart);
 }
 
 h3 {
   color: var(--pKleurZwart);
+  font-family: "monsRegular";
 }
 
 p {
+   font-family: "interRegular";
+    font-size: 1em;
   color: var(--pKleurZwart);
   line-height: 1.3;
+}
+
+a{
+  font-family: "interRegular";
 }
 
 @media (width > 35em) {
@@ -77,20 +103,6 @@ p {
   html {
     padding: 0 1rem;
   }
-}
-
-html {
-  color: var(--tekstKleur);
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background: black;
-  }
-}
-
-p {
-  font-size: 1em;
 }
 
 @media (width > 60em) {
@@ -112,8 +124,8 @@ header {
   color: var(--tekstKleurHeader);
   /* margin: 2rem; */
 
-  div {
-    margin:2rem;
+  .hoofdtekst {
+    margin: 2rem;
     padding-top: 4rem;
   }
   /* nav {
@@ -170,12 +182,11 @@ footer {
   opacity: 0;
   transform: translateY(20px);
   filter: blur(1rem);
-  transition: all .8s ease;
+  transition: all 0.8s ease;
 }
 
 .reveal.show {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
-
 }
