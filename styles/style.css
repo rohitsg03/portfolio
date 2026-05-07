@@ -113,7 +113,8 @@ header {
   /* margin: 2rem; */
 
   div {
-    margin: 12rem 2rem 2rem 2rem;
+    margin:2rem;
+    padding-top: 4rem;
   }
   nav {
     /* background: linear-gradient(180deg, #c91e1e 20%, #ffffff 90%); */
