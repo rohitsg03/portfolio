@@ -116,8 +116,7 @@ header {
     margin:2rem;
     padding-top: 4rem;
   }
-  nav {
-    /* background: linear-gradient(180deg, #c91e1e 20%, #ffffff 90%); */
+  /* nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -127,10 +126,10 @@ header {
       color: var(--pKleurZwart);
       height: 2em;
     }
-  }
+  } */
 }
 
-header nav ul {
+/* header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,7 +146,7 @@ header nav ul {
       }
     }
   }
-}
+} */
 
 footer {
   padding: 2rem 0;
