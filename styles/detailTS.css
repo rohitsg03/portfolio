@@ -1,0 +1,134 @@
+header section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 2rem;
+
+  div:nth-of-type(1) a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.3rem 1rem;
+    border-radius: 300rem;
+    background-color: transparent;
+    border: 0.1rem dashed;
+    align-items: center;
+    text-decoration: none;
+    color: var(--pKleurZwart);
+    transition: all 0.2s linear;
+
+    svg {
+      height: 0.7rem;
+      width: auto;
+      color: black;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      background-color: #c91e1e;
+      border-radius: 300rem;
+      border-style: none;
+
+      svg {
+        color: white;
+        transform: scale(1);
+      }
+    }
+  }
+
+  div:nth-of-type(2) {
+    h1 {
+      padding-top: 6rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    padding-top: 2rem;
+    font-weight: 400;
+    color: var(--pKleurSubtext);
+    line-height: 1.2em;
+    font-weight: 500;
+    font-size: 1.1em;
+  }
+
+  div:nth-of-type(3) {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    p {
+      border: 0.1rem solid var(--pKleurSubtext);
+      border-radius: 3rem;
+      padding: 0.2em 0.7em;
+      align-self: center;
+      color: var(--pKleurSubtext);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 0.3rem;
+      color: black;
+      font-weight: 600;
+      background-color: var(--achtergrondkleurTS);
+      padding: 0.3rem 0.8rem;
+      border-radius: 3rem;
+
+      svg {
+        height: 1rem;
+      }
+    }
+  }
+
+  @media (width > 35em) {
+    div:nth-of-type(3) {
+      width: 50%;
+    }
+
+    div:nth-of-type(4) img {
+      height: auto;
+      width: 100%;
+      border-radius: var(--borderRadiusMobiel);
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (width > 52em) {
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  main article:nth-of-type(1) {
+    width: 80%;
+  }
+
+  main article:nth-of-type(2) {
+    display: grid;
+    grid-template-areas:
+      "tekst  img"
+      "tekst2 img"
+      "tekst3 img";
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  main article:nth-of-type(2) img {
+    grid-area: img;
+    height: 15rem;
+  }
+}

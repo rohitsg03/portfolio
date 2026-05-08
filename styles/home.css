@@ -54,12 +54,17 @@ header section:nth-of-type(1) {
     height: 3em;
     width: 10em;
     margin-top: 2rem;
-    color: black;
+    color: var(--pKleurZwart);
 
-    background-color: white;
-    border: 0.1rem dashed black;
+    background-color: var(--achtergrondkleur);
+    border: 0.1rem dashed var(--pKleurZwart);
     border-radius: 300rem;
     transition: all 0.2s linear;
+
+    svg {
+      color: var(--pKleurZwart);
+      height: 1em;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -71,11 +76,6 @@ header section:nth-of-type(1) {
       svg {
         color: white;
       }
-    }
-
-    svg {
-      color: black;
-      height: 1em;
     }
   }
 }
@@ -125,8 +125,8 @@ main section > article:nth-of-type(4) > div:nth-of-type(1) {
       grid-area: titel;
       font-size: 1.3em;
       font-weight: 500;
-      
-      padding: .5rem 0;
+
+      padding: 0.5rem 0 .2rem 0;
     }
   }
 
@@ -220,23 +220,23 @@ main section > article:nth-of-type(4) a {
 }
 
 main section > article:nth-of-type(1) div div:nth-of-type(3) a {
-  background-color: #3bc0ed76;
-  padding: .3rem .7rem;
+  background-color: var(--achtergrondkleurTS);
+  padding: 0.3rem 0.8rem;
 }
 
 main section > article:nth-of-type(2) div div:nth-of-type(3) a {
-  background-color: #ee9e9e7f;
-  padding: .3rem .7rem;
+  background-color: var(--achtergrondKleurSH);
+  padding: 0.3rem 0.8rem;
 }
 
 main section > article:nth-of-type(3) div div:nth-of-type(3) a {
   background-color: #fffccb;
-  padding: .3rem .7rem;
+  padding: 0.3rem 0.8rem;
 }
 
 main section > article:nth-of-type(4) div div:nth-of-type(3) a {
-  background-color: #67e9a482;
-  padding: .3rem .7rem;
+  background-color: var(--achtergrondKleurIP);
+  padding: 0.3rem 0.8rem;
 }
 
 /* Tags */
@@ -263,7 +263,7 @@ main section > article > div > div:nth-of-type(3) {
     gap: 0.3rem;
 
     svg {
-      height: 1.1rem;
+      height: 1rem;
     }
   }
 }
