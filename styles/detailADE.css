@@ -107,7 +107,6 @@ main article:nth-of-type(2) {
     display: grid;
     grid-template-columns: max-content max-content;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     margin: 5rem 0;
     width: 100%;
@@ -186,7 +185,6 @@ main article:nth-of-type(2) div:nth-of-type(4) {
     display: grid;
     grid-template-columns: max-content;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
     padding-top: 4rem;
 
@@ -203,7 +201,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-top: 2rem;
   margin-bottom: 5rem;
   gap: 2rem;
@@ -222,7 +219,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img{
@@ -238,7 +234,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img{
@@ -254,7 +249,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img{
