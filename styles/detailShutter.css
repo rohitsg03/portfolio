@@ -103,7 +103,6 @@ main article:nth-of-type(2) {
     display: grid;
     grid-template-columns: max-content max-content;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
     margin: 3rem 0;
     width: 100%;
@@ -148,7 +147,7 @@ main article:nth-of-type(2) {
   }
   article:nth-of-type(2) {
     p {
-      width: 60%;
+      width: 70%;
     }
   }
   main article:nth-of-type(2) div:nth-of-type(3) {
@@ -199,7 +198,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 3rem;
   margin-bottom: 5rem;
   gap: 2rem;
@@ -218,7 +216,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img {
@@ -234,7 +231,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img {
@@ -250,7 +246,6 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 1rem;
 
       img {
