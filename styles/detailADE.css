@@ -1,3 +1,7 @@
+span{
+    font-style: italic;
+}
+
 header section:nth-of-type(1) {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,7 @@ header section:nth-of-type(1) {
       gap: 0.3rem;
       color: black;
       font-weight: 600;
-      background-color: var(--achtergrondkleurSH);
+      background-color: var(--achtergrondkleurADE);
       padding: 0.3rem 0.8rem;
       border-radius: 3rem;
 
@@ -105,14 +109,14 @@ main article:nth-of-type(2) {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
     width: 100%;
 
     img {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 18.5rem;
+      height: 18rem;
     }
   }
 
@@ -195,12 +199,12 @@ main article:nth-of-type(2) div:nth-of-type(4) {
   }
 }
 
-main article:nth-of-type(2) div:nth-of-type(4) div {
+main article:nth-of-type(2) div:nth-of-type(4) div{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  padding-top: 2rem;
   margin-bottom: 5rem;
   gap: 2rem;
 
@@ -221,7 +225,7 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       justify-content: center;
       gap: 1rem;
 
-      img {
+      img{
         height: 8rem;
       }
     }
@@ -237,7 +241,7 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       justify-content: center;
       gap: 1rem;
 
-      img {
+      img{
         height: 9.5rem;
       }
     }
@@ -253,7 +257,7 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
       justify-content: center;
       gap: 1rem;
 
-      img {
+      img{
         height: 12rem;
       }
     }

@@ -35,8 +35,9 @@
   --achtergrondkleur: light-dark(white, rgb(23, 24, 24));
 
   --achtergrondkleurTS: light-dark(#00b6f0, #4dc1e8);
-  --achtergrondKleurSH: light-dark(#ee9e9e7f, #ee9e9e);
-  --achtergrondKleurIP: light-dark(#67e9a482, #67e9a3);
+  --achtergrondkleurSH: light-dark(#ee9e9e7f, #ee9e9e);
+  --achtergrondkleurIP: light-dark(#67e9a482, #67e9a3);
+  --achtergrondkleurADE: light-dark(#f5f093 ,#fffccb);
 
   /* Borders */
   --borderRadiusMobiel: 0.8rem;
