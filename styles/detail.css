@@ -115,6 +115,7 @@ main > article:nth-of-type(1) {
 
   p {
     color: var(--pKleurZwart);
+    font-size: 1.1em;
   }
 
   img {

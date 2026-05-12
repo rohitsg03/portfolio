@@ -18,6 +18,11 @@
   src: url(../fonts/Inter_18pt-Regular.ttf);
 }
 
+@font-face {
+  font-family: "monsLight";
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
 * {
   margin: 0;
 }
@@ -73,7 +78,7 @@ h2 {
   padding: 0.5rem 0;
   font-size: 1.5em;
   font-family: "monsSBold";
-  font-weight: 900;
+  font-weight: 500;
   color: var(--pKleurZwart);
 }
 
@@ -98,6 +103,7 @@ p {
 
 a {
   font-family: "interRegular";
+  font-size: 1em;
 }
 
 @media (width > 35em) {
@@ -188,40 +194,115 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 0;
-  height: 10rem;
   border-top: 0.1rem solid;
 
-  h3 {
-    padding-bottom: 1rem;
-  }
-
-  span {
+  span{
     color: #c91e1e;
   }
 
   ul {
-    display: flex;
     padding-left: 0;
 
-    li {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
-      gap: 0.5rem;
+    h3 {
+      font-size: 1.3em;
+      font-weight: 500;
+    }
 
-      p {
-        color: var(--pKleurSubtext);
+    li:nth-of-type(2) p a {
+      text-decoration: none;
+      font-family: "monsRegular";
+      font-size: 1.55rem;
+      color: var(--pKleurZwart);
+      transition: all 0.2s linear;
+
+      span{
+        font-family: "monsLight";
+        color: #c91e1e;
       }
 
-      a {
-        color: var(--pKleurSubtext);
-        text-decoration: none;
-        transition: all 0.2s linear;
-        font-size: 1.1em;
+      &:hover {
+        color: #c91e1e;
+      }
+    }
 
-        &:hover {
-          text-decoration: underline;
+    li {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+      transition: all 0.2s linear;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+
+        a {
+          text-decoration: none;
+          color: var(--pKleurZwart);
+          
+
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: #c91e1e;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width > 52em) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 0.1rem solid;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      li:nth-of-type(2) p a {
+      text-decoration: none;
+      font-family: "monsRegular";
+      font-size: 1.1rem;
+      color: var(--pKleurZwart);
+      transition: all 0.2s linear;
+
+      span{
+        font-family: "monsLight";
+        color: #c91e1e;
+      }
+
+      &:hover {
+        color: #c91e1e;
+      }
+    }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+          width: max-content;
+          padding-bottom: 0;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+
+          a:hover{
+            text-decoration-color: #c91e1e;
+          }
         }
       }
     }
