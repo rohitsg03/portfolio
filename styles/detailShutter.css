@@ -166,8 +166,12 @@ main article:nth-of-type(2) div:nth-of-type(4) div {
 
 @media (width > 70em) {
   main article:nth-of-type(2) {
-    img {
-      height: 12rem;
+    div:nth-of-type(4) > div {
+      gap: 2rem;
+
+      img {
+        height: 12rem;
+      }
     }
   }
 }
